@@ -1,5 +1,56 @@
 # Intro to Async Programming
 
+## Chapter 16
+##### what is the idea behind asynchronous programming?
+-Async resolves around task switching, especially in regards to scenarios where one task requires excessive wait time. Can also be used to do quickly finish short tasks 
+
+##### how is Async programming different from synchronous programming?
+Synchronous, or sequential, tackles tasks as they are written. Async can swap between
+tasks
+
+##### How is async different from threading and multiprocessing?
+Threading and multiprocessing create multiple copies of running code, able to execute in 
+a parallel and partitioned fashion. Async operates in one instance, sharing resources and data
+
+## Chapter 17 
+##### What is Async programming? What advantages?
+Allows switching between tasks and functions, via event loops and 
+dedicated async functions
+
+##### What are the main elements in an asynchronous program? How do they interact?
+- Event Loops - handles all tasks to be run asynchronously. Is responsible for task swap
+- Coroutines - tasks handled by event loops. Basically async function wrappers
+- Futures - placeholders for results returned by coroutines
+
+##### What are async and await? What purpose do they serve?
+- async - async def func(): creats an async function
+- await - releases control to Event loop (allow loop to swap tasks)
+
+##### What options does asyncio provide, in terms of implementing async programming?
+- asyncio.get_event_loop() - provides a new AbstractEventLoop, to handle coroutines.
+(Note that asyncio has a 'global' loop that can be used)
+- AbstractEventLoop.create_task() - Inputs a coroutine to add to event loop task list
+- AbstractEventLoop.run_until_complete() - Called by loop. Executes until future is returned. 
+                        No other code can run until loop is complete and future returned
+- AbstractEventLoop.run_forever - Like run_until_complete, but will only close loop on explicit .stop() Good for servers
+- AbstractEventLoop.stop() - Safely stop event loop at next available await. 
+- AbstractEventLoop.sleep() - a coroutine used to cause immediate task switch event
+- AbstractEventLoop.wait() - Takes a list of futures and awaits their execution (sub-coroutines)
+                        
+##### what are the improvements in regards to asynchronous programming provided in 3.7?
+- async/await are reserved keywords
+- Asyncio now has a .run() to simplify boilerplate (rather than adding to an AbstractEventLoop obj, call .run() and add to Asyncio
+Perf improvement
+
+##### What are blocking functions? Why do they pose a problem for traditional async?
+Tasks that prevent any Event Loop switching (read data, Stdin, large math, etc)
+Async will usually offer worse performance when blocking functions exist. Consider concurrent.futures.ThreadPoolExecutor or .ProcessPoolExecutor
+
+##### How does concurrent.futures provide solution to blocking functions for async? Options?
+High level interface for async functions. Allows handling regular functions rather than coroutines, via multithreading or processing
+If crunching numbers (high blocking) consider Executor
+
+##Scripts
 ### 01.py
 Asynchronous Prime finder, checking if numbers 9_637_529_763_296_797, 427_920_331, and 157 are prime via 
 incrementation.
