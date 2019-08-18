@@ -2,7 +2,7 @@
 
 ## Chapter 16
 ##### what is the idea behind asynchronous programming?
--Async resolves around task switching, especially in regards to scenarios where one task requires excessive wait time. Can also be used to do quickly finish short tasks 
+Async resolves around task switching, especially in regards to scenarios where one task requires excessive wait time. Can also be used to do quickly finish short tasks 
 
 ##### how is Async programming different from synchronous programming?
 Synchronous, or sequential, tackles tasks as they are written. Async can swap between
