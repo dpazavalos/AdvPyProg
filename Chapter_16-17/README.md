@@ -50,7 +50,7 @@ Async will usually offer worse performance when blocking functions exist. Consid
 High level interface for async functions. Allows handling regular functions rather than coroutines, via multithreading or processing
 If crunching numbers (high blocking) consider Executor
 
-##Scripts
+## Scripts
 ### 01.py
 Asynchronous Prime finder, checking if numbers 9_637_529_763_296_797, 427_920_331, and 157 are prime via 
 incrementation.
