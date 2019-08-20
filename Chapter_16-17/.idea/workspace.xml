@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b985120-5525-4751-a3c9-4a03d56d34ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Chapter_12/01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chapter_12/02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chapter_12/03.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chapter_12/04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chapter_12/05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Chapter_12/06.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter_18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter_18/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter_18/README.MD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,9 +39,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1297" />
-    <option name="height" value="1410" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -107,9 +102,10 @@
     <option name="totallyTimeSpent" value="4152000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1136" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120139584" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16131191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

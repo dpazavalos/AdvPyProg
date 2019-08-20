@@ -31,3 +31,10 @@ awaiting the larger ones
 Simple Server. Receive connections, stdout received data. Tested with multiple telnet clients
 
 ### 02.py
+async http requester. Single call, writes to file using stdlib open
+
+### 03.py
+integrate asyncfile to 02.py, allowing asynchronous HTTP Get AND File write (using chunks to write)
+Worth note, if we wanted to get super efficient we could substitute the session.get for a more nuanced data receive 
+function that both received data in chunks and immediately wrote said chunk, but that's nit picking performance for such
+a small file
